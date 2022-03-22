@@ -1,7 +1,7 @@
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faPen,faTrashCan} from '@fortawesome/free-solid-svg-icons';
 
-const UserList = ({ users, remove,setTogleEdit,selectUser,setTogleRemove}) => {
+const UserList = ({ users, remove,setTogleEdit,selectUser}) => {
     return (
       <div>
         <section className="userList">

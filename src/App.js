@@ -36,6 +36,7 @@ function App() {
     setTogleRemove(!togleRemove)
     axios.delete(`https://users-crud1.herokuapp.com/users/${id}`)
     .then(()=>getUsers())
+    
   };
 
   const selectUser = (user) => {
