@@ -1,38 +1,150 @@
 .App {
+  font-family: "Helvetica Neue";
   text-align: center;
+  /* background: #E5E5E5; */
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+  width: 381px;
+  height: 274px;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin: 0 47px 27px 47px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.userList {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-left: 13%;
+}
+
+ .backForm {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /*background: #212121;*/
+} 
+.form {
+  position: absolute;
+  left: 35.5%;
+  top: 5%;
+  z-index: 400;
+  width: 419px;
+  height: 731px;
+  border: 1px solid #e5e5e5;
+  background: #ffffff;
+}
+
+.formHeader,
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+.header {
+  margin-top: 50px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.formClosed, .formClosedRemove {
+  position: absolute;
+  left: 381px;
+  top: 2px;
+  height: 26px;
+  font-size: 14px;
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.formClosedRemove{
+  top: 2px;
+}
+input {
+  border: 1px solid #c3c1c1;
+  box-sizing: border-box;
+  border-radius: 6px;
+  width: 355px;
+  height: 48px;
+  margin: 30px 32px;
+  background: #f9fafc;
+}
+label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+#formNewUser {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+}
+#firts_name,
+.email,
+#last_name,
+.password,
+.birthday {
+  position: absolute;
+  left: 40px;
+}
+#birthday {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.buttonForm {
+  width: 355px;
+  height: 45px;
+  background: #555a88;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.buttonNewUser {
+  margin-left: 20%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  cursor: pointer;
+  width: 227px;
+  height: 45px;
+  background: #555a88;
+}
+.cardRemove{
+  position: absolute;
+  left: 30%;
+  top: 40%;
+  right: 30%;
+  bottom: 40%;
+  z-index: 400;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 419px;
+  height: 265px;
+  background: #FFFFFF;
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-size: 32px;
+  line-height: 39px;
+  color: #0F0F2D;
+}
+.pRemove{
+  font-size: 16px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
