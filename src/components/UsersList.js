@@ -1,3 +1,6 @@
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faPen,faTrashCan} from '@fortawesome/free-solid-svg-icons';
+
 const UserList = ({ users, remove,setTogleEdit,selectUser,setTogleRemove}) => {
     return (
       <div>
@@ -13,9 +16,11 @@ const UserList = ({ users, remove,setTogleEdit,selectUser,setTogleRemove}) => {
                 <p>{user.email}</p>
                 <h5>BIRTHDAY</h5>
                 <p>{user.birthday}</p>
-                <div>
-                  <button onClick={() => remove(user.id) }>remove</button>
-                  <button onClick={()=> {setTogleEdit(true);selectUser(user)}}>edit</button>
+                <div className='icons'>
+              
+                  <FontAwesomeIcon icon={faTrashCan} onClick={() => remove(user.id) } id="faTrashCan"/>
+                  <FontAwesomeIcon icon={faPen} onClick={()=> {setTogleEdit(true);selectUser(user)}} id="faPen"/>
+                 
                 </div>
               </section>
             </div>
